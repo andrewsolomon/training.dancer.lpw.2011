@@ -1,11 +1,10 @@
 #!/usr/bin/perl -Ilib
 
 use feature qw/say/;
-
 use Dancer;
 use Airport::Controller;
-set port => $ARGV[0];
-say 'Using port '.$ARGV[0];
+
+set port => $ENV{DANCER_PORT};
 
 
 Dancer->dance;

@@ -16,9 +16,11 @@ Dancer is a micro 'web framework' - a toolkit for developing a dynamic web appli
 
 Prerequisites
 -------------
+Basic knowledge of:
 
-* Basic Perl knowledge (no need for OO Perl)
-* Basic HTML/HTTP knowledge
+* Perl (no need for OO Perl)
+* HTML/HTTP 
+* A text editor like vi/emacs/pico
 
 Preparation
 -----------
@@ -29,6 +31,10 @@ Getting Started
 ---------------
 * Login to lpw.illywhacker.net as per the printout received on arrival
 * Browse to http://lpw.illywhacker.net
+* Checkout the learning materials
+```
+git clone  git@github.com:andrewsolomon/training.dancer.lpw.2011.git
+```
 
 Instructions
 ------------
