@@ -1,0 +1,9 @@
+<form action="show-parameters" method="get">
+  First parameter: <input type="text" name="p1" /><br />
+  Second parameter: <input type="text" name="p2" /><br />
+  Third parameter: <input type="text" name="p3" /><br />
+  <input type="submit" value="Submit" />
+</form>
+
+
+

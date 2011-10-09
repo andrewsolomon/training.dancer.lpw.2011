@@ -1,0 +1,8 @@
+<h1>GET form for accessing the hello-adj get method</h1>
+<form action="hello-adj" method="get">
+  Adjective: <input type="text" name="adjective" /><br />
+  <input type="submit" value="Submit" />
+</form>
+
+
+

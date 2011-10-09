@@ -1,0 +1,15 @@
+template: 'template_toolkit'
+engines:
+  template_toolkit:
+    start_tag: '[%'
+    stop_tag: '%]'
+
+
+logger: 'console'
+log: 'debug'
+show_errors: 1
+
+airports_csv: 'data/iata_airports.csv'
+
+
+

@@ -1,0 +1,13 @@
+<h1>Parameters</h1>
+
+<table>
+<tr><td><b>Key</b></td><td><b>Value</b></td></tr>
+[% FOREACH p IN parameter_hashref %]
+
+<tr> <td> [% p.key %] </td> <td> [% p.value %] </td> </tr>
+
+[% END %]
+
+</table>
+
+

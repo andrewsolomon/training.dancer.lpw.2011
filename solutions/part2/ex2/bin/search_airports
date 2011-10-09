@@ -1,0 +1,89 @@
+#!/usr/bin/perl -Ilib
+
+use strict;
+use warnings;
+use feature qw/say/;
+use Data::Dump qw/pp/;
+use Getopt::Long;
+use Airport::Data;
+use Airport::Search;
+use List::Util qw/min/;
+
+
+
+
+my $filename   = "data/iata_airports.csv";
+my $number = 1;
+my ($latitude, $longitude);
+my $matching;
+my $word;
+my $distance = 2;
+my $help;
+
+my $result = GetOptions (
+  "filename=s"  => \$filename,      # string
+  "number=i"    => \$number,    # numeric
+  "latitude=f"  => \$latitude,
+  "longitude=f" => \$longitude,
+  "distance=f" => \$distance,
+  "matching=s"  => \$matching,      # string
+  "word"        => \$word,
+  "help"        => \$help,
+);
+
+if ($help) {
+    say <<__END__ ;
+
+Synopsis
+
+    Searching airport names:  
+
+    $0 --matching <airport name> [--word]  [--number <int> ]
+
+    Searching airports near a lat-long location
+
+    $0 --latitude <float> --longitude <float> [--distance <float>] [--number <int>]
+
+
+Options
+
+    --word - only match airports who's names match the search string with word boundaries
+    --number - print up to <int> of the matches
+
+
+__END__
+
+    exit;
+}
+
+my $rah_airports = Airport::Data::parse_airports($filename);
+my $rah_airports_found = [];
+
+
+
+if ($matching) {
+  say "Up to $number airports matching $matching in $filename:";
+  $rah_airports_found = Airport::Search::get_name_matching_airports(
+    airports        => $rah_airports,
+    matching_string => $matching,
+    word            => $word,
+  );
+}
+elsif ($latitude && $longitude) {
+  say "Up to $number airports near [$latitude, $longitude] in $filename:";
+  $rah_airports_found = Airport::Search::get_latlong_matching_airports(
+    airports        => $rah_airports,
+    lat             => $latitude,
+    long            => $longitude,
+    max             => $distance,
+  );
+}
+else {
+  die "Must have at least --matching, or --latitude, --longitude and --distance as arguments";
+}
+
+for (my $i = 0; $i <  min($number, scalar(@$rah_airports_found)); $i++) {
+  say pp ($rah_airports_found->[$i]);
+}
+
+

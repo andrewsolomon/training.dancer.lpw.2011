@@ -1,0 +1,4 @@
+[% FOREACH adj in adjective_list %]
+<p>Hello [% adj %] thing!</p>
+[% END %]
+

@@ -1,0 +1,13 @@
+engines:
+  template_toolkit:
+    start_tag: '[%'
+    stop_tag: '%]'
+
+template: 'template_toolkit'
+
+logger: 'console'
+log: 'debug'
+show_errors: 1
+
+
+

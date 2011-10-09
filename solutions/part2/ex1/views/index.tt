@@ -1,0 +1,28 @@
+<html>
+<head><title>Find an Airport</title></head>
+<body>
+  <h1>Find an Airport</h1>
+
+<form action="results" method="get">
+  <input type="text" name="searchstring" value="[%searchstring%]"/><br />
+  <input type="submit" value="Submit" />
+</form>
+
+[% IF searchresults %]
+<h2> Search Result </h2>
+<table>
+<tr><td><b>Name</b></td><td><b>Country</b></td></tr>
+
+[% FOREACH airport IN searchresults %] 
+<tr><td>[% airport.name %]</td><td>[% airport.iso_country %]</td></tr>
+
+[% END %]
+
+</table>
+[% END %]
+
+
+</body>
+</html>
+
+
