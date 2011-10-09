@@ -23,7 +23,7 @@ Prerequisites
 Preparation
 -----------
 
-* Bring a laptop with an ssh client (e.g. PuTTY or MINGW32 if it's Windows)
+* Bring a laptop with an ssh client (e.g. PuTTY or MINGW/MSYS if it's Windows)
 
 Getting Started
 ---------------
