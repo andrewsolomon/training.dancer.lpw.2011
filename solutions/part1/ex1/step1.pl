@@ -1,4 +1,4 @@
-#!/bin/env perl
+#!/usr/bin/perl
 use Dancer;
 
 set port => $ENV{'DANCER_PORT'};
