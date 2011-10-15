@@ -5,11 +5,11 @@ use warnings;
 use feature qw/say/;
 use Getopt::Long;
 use Passwd::Unix;
+use String::Random;
 
 
 sub create_student {
 	my $stu = shift;
-	print "creating student $stu ... ";
 
 	# check stu isn't in the passwd file
 	my $stumatch = `grep $stu /etc/passwd`; chomp($stumatch);
@@ -21,12 +21,10 @@ sub create_student {
 	# generate a new port number which hasn't been used in a username
 	my $port;
 	foreach my $i (1..1000) {
-		print '-';
 		$port = int(rand(999)) + 3001;
 		my $portmatch = `grep $port /etc/passwd`; chomp($portmatch);
 
 		unless ($portmatch) {
-			print " port number $port  ... ";
 			last;
 		}
 		if ($i eq 1000) {
@@ -38,11 +36,24 @@ sub create_student {
 	my $username = "${stu}.$port";
 
 	# Create the user
+	
+	if (system("useradd -m $username")) {
+		say 'FAILED - to add user';
+		return;
+	}
 
 	# Set the password
+	my $rand = new String::Random;
+	my $prefix = $rand->randpattern("ccc");
+	my $pu = Passwd::Unix->new();
+	$pu->passwd($username, $pu->encpass("${prefix}.$port"));
 
 	# store this port number in the student's .bashrc as DANCER_PORT
-	say " $username Succeeded";
+	if (system("echo export DANCER_PORT=$port >> /home/$username/.bashrc")) {
+		say 'FAILED - to set DANCER_PORT';
+	}
+
+	say "Created $username - password: ${prefix}.$port";
 }
 
 my ($filename,$student, $help);
