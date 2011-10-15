@@ -33,7 +33,7 @@ Getting Started
 * Checkout the learning materials
 
 ```
-git clone  git@github.com:andrewsolomon/training.dancer.lpw.2011.git
+git clone git://github.com/andrewsolomon/training.dancer.lpw.2011.git
 ```
 
 * When you've done an exercise, view the result at http://lpw.illywhacker.net:[Your Port Number]
