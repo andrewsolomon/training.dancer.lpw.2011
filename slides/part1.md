@@ -21,7 +21,7 @@ Concepts
 Create a directory
 
 ```
-$ mkdir YAPC2011DancingLesson/exercises/part1/ex1
+$ mkdir training.dancer.lpw.2011/exercises/part1/ex1
 ```
 
 Create the script ```part1/ex1/step1.pl```
@@ -247,7 +247,7 @@ For further information about Template Toolkit directives visit this page http:/
 Exercise 4': Dancer bug
 -----------------------
 
-<img src="https://github.com/andrewsolomon/YAPC2011DancingLesson/raw/master/slides/images/cybergedeon_warning_banana_skin.jpg" alt="Banana skin" width="200" />
+<img src="https://github.com/andrewsolomon/training.dancer.lpw.2011/raw/master/slides/images/cybergedeon_warning_banana_skin.jpg" alt="Banana skin" width="200" />
 
 
 ```
@@ -553,7 +553,7 @@ perldoc Template::Manual::Directives
 Exercise 9': Wantarray problem
 -------------------------------
 
-<img src="https://github.com/andrewsolomon/YAPC2011DancingLesson/raw/master/slides/images/cybergedeon_warning_banana_skin.jpg" alt="Banana skin" width="200" />
+<img src="https://github.com/andrewsolomon/training.dancer.lpw.2011/raw/master/slides/images/cybergedeon_warning_banana_skin.jpg" alt="Banana skin" width="200" />
 
 
 

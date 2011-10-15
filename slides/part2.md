@@ -3,9 +3,9 @@ Implementing an MVC web application
 
 Our project is to implement a single page website like this:
 
-![Index Page](https://github.com/andrewsolomon/YAPC2011DancingLesson/raw/master/slides/images/index.png "Index page")
+![Index Page](https://github.com/andrewsolomon/training.dancer.lpw.2011/raw/master/slides/images/index.png "Index page")
 
-![Results Page](https://github.com/andrewsolomon/YAPC2011DancingLesson/raw/master/slides/images/results.png "Results page")
+![Results Page](https://github.com/andrewsolomon/training.dancer.lpw.2011/raw/master/slides/images/results.png "Results page")
 
 
 It will be similar to the elementary website we just developed, but
