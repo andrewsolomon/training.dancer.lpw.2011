@@ -31,10 +31,13 @@ Getting Started
 ---------------
 * Login to lpw.illywhacker.net as per the printout received on arrival
 * Checkout the learning materials
-* When you've done an exercise, view the result at http://lpw.illywhacker.net:[Your Port Number]
+
 ```
 git clone  git@github.com:andrewsolomon/training.dancer.lpw.2011.git
 ```
+
+* When you've done an exercise, view the result at http://lpw.illywhacker.net:[Your Port Number]
+
 
 Instructions
 ------------
