@@ -33,11 +33,10 @@ sub create_student {
 		}
 	}
 
-	my $username = "${stu}.$port";
 
 	# Create the user
 	
-	if (system("useradd -m $username")) {
+	if (system("useradd -m $stu")) {
 		say 'FAILED - to add user';
 		return;
 	}
@@ -46,14 +45,17 @@ sub create_student {
 	my $rand = new String::Random;
 	my $prefix = $rand->randpattern("ccc");
 	my $pu = Passwd::Unix->new();
-	$pu->passwd($username, $pu->encpass("${prefix}.$port"));
+	$pu->passwd($stu, $pu->encpass("${prefix}$port"));
 
 	# store this port number in the student's .bashrc as DANCER_PORT
-	if (system("echo export DANCER_PORT=$port >> /home/$username/.bashrc")) {
-		say 'FAILED - to set DANCER_PORT';
+	if (system("echo export DANCER_PORT=$port >> /home/$stu/.bashrc")) {
+		say 'FAILED - to set DANCER_PORT userdel -r <username> and try again';
+	}
+	if (system(q{echo export PS1=\'\\\u@[lpw.illywhacker.net:\$DANCER_PORT] \\\w \\\$ \\\n\' >> /home/}.$stu.'/.bashrc')) {
+		say 'FAILED - to set prompt -  userdel -r <username> and try again';
 	}
 
-	say "Created $username - password: ${prefix}.$port";
+	say "Created $stu - password: ${prefix}$port";
 }
 
 my ($filename,$student, $help);
@@ -68,11 +70,11 @@ sub helpmsg {
 	say <<__END__ ; 
 
 Synopsis 
-	Create a student called 'barry.<portnum>'
+	Create a student called 'barry'
 
 	$0 --student barry
 
-	prints the username containing the portnumber and a password 
+	prints the username and a password (ending with their HTTP port number)
 
 	Create a set of students from a file consisting of a username per line
 
