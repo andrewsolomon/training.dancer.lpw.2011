@@ -65,7 +65,7 @@ This provides you with the basic toolkit of skills for implementing a web site.
 
 This is where the interface to the search engine is implemented. If you just want to cut to the chase, you can skip some of the exercises as follows:
 
-<b>(Quick and) Dirty Dancing</b>
+<b>Quick (and Dirty) Dancing</b>
 
 - Part 1: Ex 1 - 4, 6, 8
 - Part 2: Ex 1 - 4
