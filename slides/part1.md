@@ -176,14 +176,16 @@ my $s_date = $dt->ymd; my $s_time = $dt->hms;
 &raquo; Exercise 4: Template Toolkit 
 =============================
 
-Now from the previous exercise you are generating HTML from 
-within a script. For a small and simple HTML file that's ok, but
+In the previous exercise you are generating HTML from 
+within a script. For a small and simple web page that's ok, but
 if it gets any bigger it will be very difficult to read the 
-script picking out the HTML from the Perl or vice versa.
+script, picking out the HTML from the Perl or vice versa.
 
 This is what a Template is for - you can separate out the 
 HTML into a different file with <i>directives</i> ``` [% date %] ``` and ``` [% time %] ```
 which will be filled in by the variables in the Perl script.
+
+In software architecture terms, we refer to the Template as the "View" and the script as the "Controller".
 
 Now,
 
