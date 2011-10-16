@@ -1,8 +1,7 @@
-#!/bin/env perl
+#!/usr/bin/perl
 use Dancer;
 use DateTime;
 
-set port => $ENV{'DANCER_PORT'};
 set logger => 'console';
 set log => 'debug';
 set show_errors => 1;

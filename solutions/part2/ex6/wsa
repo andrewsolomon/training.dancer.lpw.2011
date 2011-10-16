@@ -4,8 +4,6 @@ use feature qw/say/;
 use Dancer;
 use Airport::Controller;
 
-# set port => $ENV{DANCER_PORT};
-set port => $ARGV[0];
 
 
 Dancer->dance;
