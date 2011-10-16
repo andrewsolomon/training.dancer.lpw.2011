@@ -179,7 +179,7 @@ the search function.
 <b>NOTES</b> 
 
 * Due to the config settings above, the filename to 
-pass into Airport::Data::parse_airports is setting('airports_csv')
+pass into Airport::Data::parse_airports is ```setting('airports_csv')```
 
 * For hints at how this is done, look at ``` bin/search_airports ```
 
@@ -187,8 +187,14 @@ pass into Airport::Data::parse_airports is setting('airports_csv')
 subroutine so it is only populated the first time the ``` Airport::Controller ```
 module is loaded rather than every time we do a search.
 
-C) Add the number of airports line to the top of the ``` index/results ``` page
-as in the example 'screenshots' above using the number of 
+C) Add the number of airports line to the top of the ``` index/results ``` page 
+in the form
+
+```
+Found X airports from 6372
+```
+
+using the number of 
 elements in the array value being passed to the template.
 
 
