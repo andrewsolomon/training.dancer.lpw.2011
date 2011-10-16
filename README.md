@@ -1,13 +1,15 @@
-Learning Website Development with Dancer
+Learning website development using Dancer
 ========================================
 
 A hands-on training session at LPW 2011 to develop a website with dynamic content.
 
 From doing the exercises you will:
 
- * understand the concept of Model-View-Controller within the Dancer framework
- * learn how to structure code to make a site easy to change and maintain
- * learn how to use object oriented Perl modules
+ * learn to use the Dancer framework
+ * learn to use Template Toolkit 
+ * understand the concept of Model-View-Controller
+ * experience structuring code for maintainability
+ * experience using object oriented Perl modules
 
 
 What's Dancer?
