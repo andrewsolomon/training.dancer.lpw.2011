@@ -1,12 +1,13 @@
-Learning to Dance
-=================
+Learning Website Development with Dancer
+========================================
 
-A hands-on training session at LPW 2011 on using Dancer.
+A hands-on training session at LPW 2011 to develop a website with dynamic content.
 
-In this lesson you'll be implementing a website for accessing an airport search engine based on Dancer.
+From doing the exercises you will:
 
-Doing the exercises you'll learn how Dancer is used, and how the code should be structured to make a site easy to change and maintain. 
-
+ * understand the concept of Model-View-Controller within the Dancer framework
+ * learn how to structure code to make a site easy to change and maintain
+ * learn how to use object oriented Perl modules
 
 
 What's Dancer?
@@ -19,6 +20,7 @@ Prerequisites
 Basic knowledge of:
 
 * Perl (no need for OO Perl)
+* Bash/Linux command line interface
 * HTML/HTTP 
 * A text editor like vi/emacs/pico
 
