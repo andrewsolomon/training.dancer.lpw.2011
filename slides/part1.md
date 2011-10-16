@@ -260,8 +260,7 @@ and swap the order of the ``` set template ``` and ``` set engines ``` calls.
 
 <b> What happens? </b>
 
-... It's a Dancer 1.3 bug - no-one's perfect!
-
+... It's a Dancer 1.3 bug (no-one's perfect) but Dancer 2 is coming soon! https://github.com/sukria/dancer2 
 
 
 Exercise 5:  Route Type 1 - parameterised base URL
