@@ -630,8 +630,11 @@ Read the code and understand how the GET parameters are appended to the URL
 each time you add a new item to your shopping list.
 
 While this is very easy, there are a number of problems:
+
 * Size limit - the maximum length of a url is 2048 characters in Internet Explorer 
+
 * Privacy - Every internet server through which your request is managed can see what's in your shopping basket.
+
 * Theft - You can add things to your basket just by modifying the url.
 
 The solution to these problems is based the concepts of 'cookie' and 'session'.
