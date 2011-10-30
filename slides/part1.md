@@ -666,6 +666,7 @@ stores ```$data``` in Dancer's internal hash of the form
 ``` $sessions{$cookie_id} = { shopping_list => $data } ```
 
 and there's no need to retrieve the cookie yourself.
+
 * The command
 
 ```session('shopping_list')```
