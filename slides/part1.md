@@ -669,9 +669,10 @@ and there's no need to retrieve the cookie yourself.
 
 * The command
 
-```session('shopping_list')```
+``` session('shopping_list') ```
 
 returns any value saved against ```shopping_list``` in this session.
+
 * Because we're using Dancer::Session::Simple you can store
 any scalar against the ```shopping_list``` session key - even 
 a HashRef...
