@@ -76,3 +76,10 @@ This is where the interface to the search engine is implemented. If you just wan
 
 - Part 1: Ex 1 - 4, 6, 8
 - Part 2: Ex 1 - 4
+
+Further Reading
+----------------
+* Homepage of Dancer http://perldancer.org/
+* Dancer Tutorial http://search.cpan.org/~xsawyerx/Dancer-1.3072/lib/Dancer/Tutorial.pod
+* Dancer Plugins http://search.cpan.org/~sukria/Dancer/lib/Dancer/Plugins.pod
+* Dancer Advent Calendar 2010 http://advent.perldancer.org/2010
