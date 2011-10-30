@@ -1,0 +1,10 @@
+<html>
+<head>
+  <title>Dancing to the supermarket</title>
+  <link rel=stylesheet type=text/css href="style.css">
+</head>
+<body>
+  [% content %]
+</body>
+</html>
+

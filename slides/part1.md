@@ -677,6 +677,25 @@ returns any value saved against ```shopping_list``` in this session.
 any scalar against the ```shopping_list``` session key - even 
 a HashRef...
 
+Exercise 12: Static content and Layout
+---------------------------------------
 
+In the directory ``` exercises/part1/ex12 ``` you'll find 
+a very simple ```step1.pl``` which
+starts Dancer without any route handlers. Even so - when you 
+run it and visit the url ``` http://[base url]/empty.html ```
+you'll get a response.  Look in the public directory to see that
+Dancer acts as a static web server with respect to the public directory
+and we're serving html and css from it.
+
+More interestingly is being able to 'glue' this together with our
+dynamic content.
+
+[<b>FIXME</b> 
+
+* Explain views/layouts
+* Devise an exercise for copying ex11/step2.pl across
+making use of the layouts
+]
 
 
