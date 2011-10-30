@@ -653,7 +653,7 @@ to as a <b>session</b>.
 
 <b>Task:</b> Copy ```step1.pl``` to ```step2.pl```, and 
 ```views/write-it-on-my-forehead.tt``` to ```views/remember.tt``` 
-and change it to use cookies and sessions,
+Change them to use cookies and sessions
 so that each GET request only has the next item for the shopping list
 and previous items are stored in the session.
 
