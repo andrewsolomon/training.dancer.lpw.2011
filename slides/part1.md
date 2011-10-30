@@ -658,6 +658,7 @@ so that each GET request only has the next item for the shopping list
 and previous items are stored in the session.
 
 <b>Hints:</b>
+
 * Near the top of ```step2.pl``` call ```set session => 'Simple'```
 * The command 
 ```
