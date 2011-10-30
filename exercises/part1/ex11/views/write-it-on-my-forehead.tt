@@ -1,0 +1,21 @@
+<h1>Shopping List on Forehead</h1>
+<form action="/" method="get">
+
+  Remember to buy: <input type="text" name="item" />
+  <input type="submit" value="Submit" />
+  <br/>
+  <br/>
+
+  <b> Don't forget </b><br/>
+  [% FOREACH item in shopping_list %]
+  <input type="text" name="item" value="[% item %]" readonly/> <br/>
+  [% END %]
+</form>
+
+
+
+
+<b> Headers: </b> <pre> [% req_headers %] </pre>
+
+
+
