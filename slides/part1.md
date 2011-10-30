@@ -662,9 +662,11 @@ and previous items are stored in the session.
 session shopping_list => $data 
 ```
 stores ```$data``` in Dancer's internal hash of the form 
+
 ``` $sessions{$cookie_id} = { shopping_list => $data } ```
 and there's no need to retrieve the cookie yourself.
 * The command
+
 ```session('shopping_list')```
 returns any value saved against ```shopping_list``` in this session.
 * Because we're using Dancer::Session::Simple you can store
