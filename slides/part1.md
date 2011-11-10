@@ -688,14 +688,22 @@ you'll get a response.  Look in the public directory to see that
 Dancer acts as a static web server with respect to the public directory
 and we're serving html and css from it.
 
-More interestingly, we're able to 'glue' public's static content 
-together with our dynamic content.
+More interesting is being able to 'glue' this css stylesheet and its
+host page together with our dynamic content. A <b>layout</b> is a special 
+kind of view located in the ```views/layouts``` directory which
+must contain a token called ```[% content %]``` where the action view
+we've been using until to now is rendered.
+
+<b>Task: </b> Wrap step2.pl from ex11 into a layout called 
+views/layouts/main.tt which is just public/empty.html with 
+```[% content %]``` added.
+
+To use the layout you'll also need 
+```layout => 'main' ```
+at the top of step2.pl
 
 [<b>FIXME</b> 
 
-* Explain views/layouts
-* Devise an exercise for copying ex11/step2.pl across
-making use of the layouts
+Make sure the above works
+
 ]
-
-
