@@ -695,7 +695,7 @@ must contain a token called ```[% content %]``` where the action view
 we've been using until to now is rendered.
 
 <b>Task: </b> Wrap step2.pl from ex11 into a layout called 
-views/layouts/main.tt which is just public/empty.html with 
+views/layouts/main.tt which is just public/main.html with 
 ```[% content %]``` added.
 
 To use the layout you'll also need 
