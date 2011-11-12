@@ -703,8 +703,4 @@ To use the layout you'll also need
 ```layout => 'main' ```
 at the top of step2.pl
 
-[<b>FIXME</b> 
 
-Make sure the above works
-
-]
