@@ -12,6 +12,7 @@ Concepts
 * <b>Static Web Page</b> - basically just some hard coded HTML
 * <b>Web Application</b> - a website where clicking on a button will do some data mining and generate new HTML on the fly.
 * <b>Template</b> - HTML files embedded with ```[% directives %]``` containing data generated on the fly
+* <b>Cookies and Sessions</b> - storing a user's data accumulated on this visit to the website
 
 
 <b>&raquo;Note</b> In case you're an a hurry to implement the search engine in part2, the exercises in part1 which you *must* do first are preceeded by a &raquo;raquo.
