@@ -20,12 +20,10 @@ get '/' => sub {
 };
 
 get '/hello-adj' => sub {
-    my $params = params();
     return "<h1>Hello ".params->{adjective}." Things!</h1>";
 };
 
 post '/hello-adj' => sub {
-    my $params = params();
     return "<h1>Hello ".params->{adjective}." Things!</h1>";
 };
 
