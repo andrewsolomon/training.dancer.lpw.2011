@@ -624,8 +624,7 @@ Exercise 11: Magic Cookies and Sessions
 
 In this exercise we'll be implementing a page for constructing a shopping
 list.  As a starting point, we've put the naive solution to this problem
-in your ```training.dancer.lpw.2011/exercises/part1/ex11``` directory as
-```step1.pl```
+in your ```training.dancer.lpw.2011/exercises/part1/ex11``` directory as ```step1.pl```
 
 Read the code and understand how the GET parameters are appended to the URL
 each time you add a new item to your shopping list.
